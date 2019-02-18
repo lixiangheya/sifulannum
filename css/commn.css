@@ -1,0 +1,289 @@
+/* 头部*/
+
+#header_wrapper{
+	width: 1349px;
+	height: 30px;
+	background: #000;
+}
+.header{
+	height: 30px;
+	background: #000;
+	line-height: 30px;
+}
+a:hover{
+	color:#ff0000
+}
+.header .header_left{
+	float: left;
+	color: #fff;
+}
+.header .header_left span{
+	display: inline-block;
+	margin: 0 22px 0 12px;
+
+}
+.header .header_left i{
+	font-size: 12px;
+    display: inline-block;
+    height: 16px;
+    border-left: 1px solid #ccc;
+    vertical-align: sub;
+}
+.header .header_left a{
+	margin: 0 12px;
+	color: #fff;
+}
+.header .header_left .top_left{
+	display: inline-block;
+	margin-left: 50px;
+}
+.header .header_right{
+	float: right;
+	
+}
+.header .header_right li{
+	float: right;	
+		padding-left: 22px;
+}
+.header .header_right li a{
+	color: #fff;
+
+}
+
+.header .header_right span{
+	display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+   
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+.header .header_right .aaa{
+	 background: url(../images/my-sephora.png);
+}
+.header .header_right .ccc{
+	 background: url(../images/vip-club.png);
+}
+.header .header_right .bbb{
+	display: inline-block;
+    width: 7px;
+    height: 12px;
+    margin-right: 6px;
+    background: url(../images/mobile-sephora.png);
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-top: -2px;
+	
+}
+.header .header_right .ddd{
+    width: 9px;
+    height: 4px;
+    display: inline-block;
+    margin-left: 5px;
+    background-position: -3px -16px;
+    margin-bottom: 3px;
+      background: url(../picture/images/123_03.jpg) no-repeat;
+   }
+   /*搜索*/ 
+ #serch_wrapper{
+	width: 1349px;
+	height: 120px;
+	background: #fff;
+}
+.serch{
+	height: 120px;
+	background: #fff;
+}
+.serch .serch_top{
+	padding-top: 24px;
+	height: 60px;
+	background: #fff;
+}
+.serch .stop_l{
+	float: left;
+	 width: 320px;
+    height: 36px;
+}
+.serch .stop_t{
+	float: left;
+	width: 650px;
+	height: 100%;
+}
+.serch .stop_t #tex{
+	float: left;
+	border: 1px solid #c8c8c8;
+	width: 540px;
+    height: 36px;
+    line-height: 34px;
+    padding-left: 20px;
+    font-size: 12px;
+}
+.serch .stop_t .st1{
+	height: 36px;
+}
+.serch .stop_t .sub{
+    float: left;
+    width: 90px;
+    height: 34px;
+    border: 1px solid #000;
+    background-color: #000;
+    border-left: 0;
+    border-right: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 34px;
+    }
+.serch .stop_t .st2{
+ 	padding-top: 3px;
+ } 
+.serch_top a{
+  	 display: inline-block;
+    padding: 0 4px;
+    font-size: 12px;
+    color: #acacac;
+  }
+.serch_top .stop_r a{
+	width: 188px;
+    height: 34px;
+    border: 1px solid #ddd;
+    float: right;
+    background-color: #fff;
+    line-height: 34px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+.serch_top .stop_r a i{
+	    width: 18px;
+    height: 26px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 10px;
+    background: url(../images/shopping_bag.png);
+}
+.serch_top .stop_r span{
+	color: #d1152a;
+    padding-left: 5px;
+    padding-right: 5px;
+        display: inline-block;
+    vertical-align: middle;
+}
+.serch_down{
+	width: 100%;
+	height: 36px;
+}
+.serch_down .sdon_l{
+	float: left;
+    width: 240px;
+    height: 36px;
+    line-height: 36px;
+    background: url(../images/classified.png);
+    background-size: 100% 100%;
+}
+.sdon_l a{
+	    color: #fff;
+    margin-left: 15px;
+    font-size: 16px;
+}
+.sdon_c{
+	    min-width: 760px;
+    float: left;
+    height: 36px;
+    line-height: 42px;
+}
+.sdon_c ul{
+	padding-left: 40px;
+	height: 100%;
+}
+.sdon_c li{
+	    margin-right: 40px;
+    display: inline-block;
+    position: relative;
+}
+.sdon_c li a{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    }
+ .sdon_r{
+ 	float: right;
+ }
+  .sdon_r img{
+  	width: 153px;
+    height: 40px;
+  }
+  /*第二个头部*/
+ /*头部*/
+#headerO_wrapper{
+	width: 1349px;
+	height: 89px;
+	background: #FFFFFF;
+}
+.headerO{
+	height: 89px;
+	background: #FFFFFF;
+}
+.headerO .aaa{   
+	 width: 250px;
+    height: 33px;
+    margin: 28px 0 0;
+    float: left;
+    cursor: pointer;
+    background: url(../images/search_logo.png) no-repeat;
+}
+.headerO span{
+	  float: left;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #333;
+    margin: 45px 0 0 30px;
+}
+#headerO_wrapper .he2{
+	    float: right;
+    margin-top: 30px;
+}
+#headerO_wrapper .he2 p{
+	    float: left;
+    color: #9d9d9d;
+}    
+ #headerO_wrapper .he2 a{
+	text-decoration:initial;
+	color: #000000;
+	cursor: pointer;
+    float: left;
+}
+.he2 a:hover{
+	color: pink;
+}
+ 
+/*底部导航*/
+#Foot_Wrapper{
+	widows: 1349px;
+	height: 102px;
+	
+	background: #000000;
+	text-align: center;
+}
+.foot_bot{
+	height: 72px;
+	padding-top: 30px;
+	background: #000000;
+	text-align: center;
+}
+.foot_bot a{
+	font-size: 14px;
+	 color: #6f6f6f;
+    margin: 0 22px;
+    line-height: 21px;
+}
+.foot_bot a:first-child{
+	padding-left: 30px;
+	background: url(../images/footer-redords-icon.png)  no-repeat;
+}
+

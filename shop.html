@@ -1,0 +1,502 @@
+ <!doctype html public="SOA">
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="description" content="SEPHORA丝芙兰化妆品购物网站-法国路威酩轩（LVMH）旗下品牌，为您提供国际知名化妆品、护肤品、彩妆、香水等美容用品，购买正品化妆品，就上丝芙兰化妆品网站，官方授权、无障碍退货！">
+        <meta name="keywords" content="化妆品,化妆品购物网站,SEPHORA丝芙兰官网">
+        <title>SEPHORA丝芙兰官网－国际化妆品购物网站！</title>
+         <link rel="shortcut icon" type="image/x-icon" href="file:///C:/Users/Administrator/Desktop/苏宁/丝芙兰/images/favicon.ico" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/commn.css"/>
+		<link rel="stylesheet" type="text/css" href="css/regin.css"/>
+		<style type="text/css">
+		.str{
+	width: 413px;
+	height: 142px;
+	background-color:#fff;
+	position: absolute;
+	top: 89px;
+	right: 78px;
+	z-index: 101;
+	border: 1px solid #dddddd;
+	display: none;
+}
+.str img{
+	float: left;
+	margin: 22px;
+}
+.stw{
+	float: left;
+	padding-top: 22px;
+}
+.sss{
+	width: 297px;
+	height: 49px;
+	color: #858585;
+	line-height: 16px;
+	font-weight: 400;
+	font-size: 14px;
+	padding-top: 5px;
+}
+.stw a{
+	display: block;
+	width: 50px;
+	height: 22px;
+	background: #ee0000;
+	text-align: center;
+	line-height: 22px;
+	color: #fff;
+}
+	.small {
+		margin: 0 10px;
+		border: 1px solid #fff;
+	}
+	
+	.small:hover {
+		border-color: #000;
+	}
+	
+	#filter {
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		background: pink;
+		opacity: 0.5;
+		left: 0;
+		top: 0;
+		display: none;
+	}
+	
+	.num {
+		padding-left: 155px;
+	}
+	
+	#box {
+		position: relative;
+		left: 80px;
+		width: 400px
+	}
+	
+	#max {
+		position: absolute;
+		left: 500px;
+		top: 200px;
+		overflow: hidden;
+		width: 400px;
+		height: 400px;
+	}
+	
+	#maxImg {
+		width: 800px;
+		height: 800px;
+		position: absolute;
+		left: 20px;
+		top: 180px;
+	}
+	
+	.nav {
+		margin: 26px auto;
+	}
+	
+	.nav p {
+		font-weight: 400px;
+		color: #666;
+	}
+	
+ .list {
+ 	width: 730px;
+ 	height: 235px;
+ 	position: absolute;
+ 	right: 100px;
+ 	margin-left: 40px;
+ }
+ 
+ .list_t {
+ 	float: left;
+ 	width: 752px;
+ 	border-bottom: 1px solid #ddd;
+ }
+ 
+ .list_t h1 {
+ 	font-weight: 500;
+ 	width: 400px;
+ 	height: 16px;
+ 	float: left;
+ 	letter-spacing: 1px;
+ 	font-size: 20px;
+ 	color: #000;
+ }
+ 
+ .list_t p {
+ 	float: left;
+ 	width: 500px;
+ 	margin-top: 8px;
+ 	font-size: 14px;
+ 	color: #000;
+ }
+ 
+ .list_t i {
+ 	float: left;
+ 	width: 400px;
+ 	margin-top: 12px;
+ 	font-size: 12px;
+ 	color: #666;
+ }
+ 
+ .list_t img {
+ 	margin-right: -20px;
+ 	margin-left: 105px;
+ }
+ 
+ .list_b {
+ 	float: left;
+ 	width: 100%;
+ 	height: 24px;
+ 	margin-top: 19px;
+ }
+ 
+ .list_b p {
+ 	float: left;
+ }
+ 
+ .one {
+ 	margin-top: 3px;
+ 	color: #666;
+ 	font-size: 12px;
+ }
+ 
+ .two {
+ 	margin-left: 40px;
+ 	margin-top: 1px;
+ 	color: #000;
+ 	font-size: 14px;
+ }
+ 
+ .san {
+ 	color: #000;
+ 	font-size: 24px;
+ 	margin-right: 10px;
+ 	margin-top: -7px;
+ }
+ 
+ .list_b a {
+ 	float: left;
+ 	margin-left: 10px;
+ 	width: 36px;
+ 	height: 20px;
+ 	line-height: 20px;
+ 	text-align: center;
+ 	background-color: red;
+ 	color: #fff;
+ }
+ 
+ .list_r {
+ 	float: left;
+ 	width: 100%;
+ 	margin-top: 20px;
+ }
+ 
+ .list_r p {
+ 	float: left;
+ 	width: 50px;
+ }
+ 
+ #pao {
+ 	float: left;
+ 	border: 1px solid pink;
+ 	width: 30;
+ 	height: 30;
+ 	text-align: center;
+ 	line-height: 30px;
+ 	margin-left: 17px;
+ 	color: #000;
+ 	position: relative;
+ }
+ 
+ #pao:hover {
+ 	background: pink;
+ 	color: #fff;
+ }
+ 
+ .list1 {
+ 	float: left;
+ 	width: 68px;
+ 	height: 39px;
+ 	margin: 45px 10px 0 67px;
+ 	border: 1px solid #ddd;
+ }
+ 
+ .list1 input {
+ 	float: left;
+ 	height: 39px;
+ 	line-height: 39px;
+ 	width: 48px;
+ 	border-right: 1px solid #ddd;
+ 	color: #000;
+ 	font-size: 16px;
+ 	text-align: center;
+ 	outline: none;
+ 	border: 0;
+ }
+ 
+ .list1_1 {
+ 	float: left;
+ 	width: 19px;
+ 	height: 39px;
+ }
+ 
+ .li_t {
+ 	float: left;
+ 	width: 19px;
+ 	height: 19px;
+ 	line-height: 16px;
+ 	color: #000;
+ 	font-size: 12px;
+ 	background: ;
+ }
+ 
+ .li_b {}
+ 
+ .www {
+ 	position: absolute;
+ 	top: 307px;
+ 	left: 0px;
+ 	font-size: 18px;
+ 	width: 175px;
+ 	height: 41px;
+ 	text-align: center;
+ 	line-height: 40px;
+ 	background-color: #e00;
+ 	cursor: pointer;
+ 	color: #fff;
+ }
+ /*.www span{ width: 16px; height: 21px; background:url(images/package.png); background-size: cover; float: left; margin: 10px 0 0 9px; }*/
+ 
+ </style> </head>
+<body>
+	<div id="header_wrapper">
+			<div class="header content">
+				<div class="header_left">
+					<span>
+						欢迎来到丝芙兰
+					</span><a href="login.html">请登录</a><i></i><a  href="regin.html">免费注册</a><a  href="#">手机验证码登录</a><div class="top_left"><a href="#">常见问题</a></div>
+				</div>
+				<div class="header_right">
+					<ul>
+						<li>
+							<a href="#">帮助中心</a>
+						</li>
+						<li>
+							<a href="#">美力事业</a>
+						</li>
+						<li>
+							<span class="bbb"></span><a href="#">手机丝芙兰</a>
+						</li>
+						<li>
+							<span class="ccc">	
+							</span><a href="#">会员俱乐部</a>
+						</li>
+						<li>
+							<span class="aaa">	
+							</span><a href="#">我的丝芙兰</a><span class="ddd"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="serch_wrapper">
+			<div class="serch content">
+				<div class="serch_top">
+					<div class="stop_l">
+						<a href="#"><img src="picture/images/111_03.jpg"/></a>
+					</div>
+					<div class="stop_t">
+						<div class="st1">
+							<input type="text" name="" id="tex" placeholder="节日气氛" /><div class="sub">搜索</div>
+						</div>
+						<div class="st2">
+							<a href="#">节日臻选套装</a>
+							<a href="#">当红膜力</a>
+							<a href="#">耀眼彩盘</a>
+							<a href="#">新年焕颜秘籍</a>
+							<a href="#">红运榜单</a>
+							<a href="#">新年香氛礼盒</a>
+						</div>
+					</div>
+					<div class="stop_r">
+						<a href="#" class="asd" >
+							<i></i>购物袋<span>0</span>件
+						</a>
+					</div>
+					<div class="str">
+						<img src="images/package.png"/>
+						<div class="stw">
+							<div class="sss"> 购物车内暂时没有商品，登陆后将显示您之前
+								加入的商品</div>
+							<a href="login.html">登录</a>
+						</div>
+					</div>
+				</div>
+				<div class="serch_down">
+					<div class="sdon_l">
+						<a href="#">全部商品类目</a>
+					</div>	
+					<div class="sdon_c">
+						<ul>
+							<li><a href="#">畅销榜单</a></li>
+							<li><a href="#">独家发售</a></li>
+							<li><a href="#">礼物套装</a></li>
+							<li><a href="#">全部品牌</a></li>
+							<li><a href="#">预约中心</a></li>
+							<li><a href="#">美力学院</a></li>
+						</ul>
+					</div>
+					<div class="sdon_r">
+						<a href="#"><img src="images/navigation_shopping.png"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav content">
+		<p> 首页 > 工具 > 化妆工具 > 彩妆套刷> 魅可 > 魅可心机美盒</p>
+	</div>
+	<div class="list content">
+		<div class="list_t">
+			<h1>魅可心机美盒-基础刷具套组</h1>
+			<p>MAC LOOK IN A BOX: BASIC BRU</p>
+			<i>魅可子弹唇膏同款外形刷盒</i>
+			<img src="picture/mac_144x60.png" />
+		</div>
+		<div class="list_b">
+			<p class="one">价格</p>
+			<p class="two">￥</p>
+			<p class="san">520</p>
+			<a href="#">新品</a>
+		</div>
+		<div class="list_r">
+			<p class="one">规格</p>
+			<a href="#" id="pao">套装</a>
+		</div>
+		<div class="list1">
+			<input type="text" name="" id="" value="1" />
+			<div class="list1_1">
+				<div class="li_t">
+					<img src="picture1/eqw_03.jpg"/>
+				</div>
+				<div class="li_b">
+					<img src="picture1/eqw_05.jpg"/>
+				</div>
+			</div>
+			<div class="www">
+				加入购物车
+				<span></span>
+			</div>
+		</div>
+	</div>
+	<div id="box">
+		<!-- 1:2:4 -->
+		<img src="picture1/1_n_06254_640x640.jpg" class="middle" width="400" height="400">
+		<div id="filter"></div>
+	</div>
+	<div id="max">
+		<img src="picture1/1_n_06254_640x640.jpg" id="maxImg" style="left: 200px;top: 200px;">
+	</div>
+	<div class="num">
+		<img src="picture1/1_n_06254_50x50.jpg" class="small" data-url="picture1/1_n_06254_640x640.jpg">
+		<img src="picture1/2_n_06254_50x50 (1).jpg" class="small" data-url="picture1/2_n_06254_640x640.jpg">
+		<img src="picture1/1_n_06254_50x50.jpg" class="small" data-url="picture1/1_n_06254_640x640.jpg">
+
+	</div>
+	<div id="New_wrapper">
+		<img src="picture1/SEPH!_02.jpg"/>
+	</div>
+	<div id="Foot_Wrapper">
+		<div class="foot_bot content">
+			<a href="#">沪公网安备 31010602003121号</a>
+			<a href="#">ICP备案序号:沪ICP备05026645号</a>
+			<a href="#">网站使用条款</a>
+			<a href="#">严正声明</a>
+			<p>本网站隶属于丝芙兰（上海）化妆品销售有限公司（企业法人营业执照)</p>
+		</div>
+	</div>
+</body>
+
+</html>
+<script>
+
+	var box3=document.getElementsByClassName('asd');
+	var box4=document.getElementsByClassName('str');
+
+	box3[0].onmouseover=function(){
+		box4[0].style.display='block'
+	}
+	box3[0].onmouseout=function(){
+		box4[0].style.display='none'
+	}
+
+	/*
+		当鼠标移入小图的时候获取到自定义属性的值然后将这个值赋值给大图
+
+	 */
+	var oSmall = document.querySelectorAll(".small");
+	var omiddle = document.querySelector(".middle");
+	var omaxImg = document.getElementById("maxImg");
+	var oFilter = document.getElementById("filter");
+	var oBox = document.getElementById("box");
+
+	//第一步给每一个元素添加事件
+	for(var i = 0; i < oSmall.length; i++) {
+		//当移入当前元素的时候
+		oSmall[i].onmouseover = function() {
+			//获取当前元素的自定义属性
+			var src = this.getAttribute("data-url");
+			//将获取到的src赋值给大图
+			omiddle.src = src;
+			omaxImg.src = src;
+		}
+	}
+
+	//放大镜--------
+	oBox.onmouseover = function() {
+		omaxImg.style.display = "block";
+		oFilter.style.display = "block";
+		this.onmousemove = function(e) {
+			var e = e || event;
+			console.log(e)
+			var l = e.clientX - oBox.offsetLeft - oFilter.offsetWidth / 2;
+			var t = e.pageY - oBox.offsetTop - oFilter.offsetHeight / 2;
+
+			/*if(l>oBox.offsetWidth - oFilter.offsetWidth){
+				l = oBox.offsetWidth - oFilter.offsetWidth
+			}
+
+			if(t>oBox.offsetHeight - oFilter.offsetHeight){
+				t = oBox.offsetHeight - oFilter.offsetHeight
+			}
+
+			if(l<0){
+				l = 0;
+			}
+
+			if(t<0){
+				t = 0;
+			}*/
+
+			l = l > oBox.offsetWidth - oFilter.offsetWidth ? oBox.offsetWidth - oFilter.offsetWidth : (l < 0 ? 0 : l);
+
+			t = t > oBox.offsetHeight - oFilter.offsetHeight ? oBox.offsetHeight - oFilter.offsetHeight : (t < 0 ? 0 : t);
+
+			oFilter.style.left = l + 'px';
+			oFilter.style.top = t + 'px';
+
+			omaxImg.style.left = -2 * l + 'px';
+			omaxImg.style.top = -2 * t + 'px';
+
+		}
+	}
+	oBox.onmouseout = function() {
+		omaxImg.style.display = "none";
+		oFilter.style.display = "none";
+	}
+</script>

@@ -1,0 +1,119 @@
+/*banner*/
+#Main_Wrapper{
+	 background: url(../images/hp_loginlage_20181227.jpg) no-repeat scroll 50% 0;
+    min-width: 1190px;
+    width: 100%;
+    height: 610px;
+  position: relative;
+}
+#Main_Wrapper .list{
+	width: 300px;
+	height: 380px;
+	padding:0  30px;
+	position: absolute;
+	right:110px;
+	top:110px;
+	background: #fff;
+}
+h4{
+	    float: left;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 26px 0 0;
+    color: #000;
+     margin-bottom: 40px;
+}
+.aac{
+	    width: 20px;
+    height: 20px;
+    margin-left: 7px;
+    margin-top: 6px;
+    position: absolute;
+    top: 136px;
+    right: 302px;
+    background:url(../images/loginin-icon.png) no-repeat ;
+    
+}
+.aab{
+	    width: 20px;
+    height: 20px;
+    margin-left: 7px;
+    margin-top: 6px;
+    position: absolute;
+    top: 86px;
+    right: 302px;
+    background:url(../images/loginin-icon.png) no-repeat ;
+    background-position-y:-20px ;
+}
+#username{
+	    width: 298px;
+    text-indent: 32px;
+        border: 1px solid #ccc;
+            height: 30px;
+            margin-bottom: 20px;
+}
+#password{
+	    width: 298px;
+    text-indent: 32px;
+        border: 1px solid #ccc;
+            height: 30px;
+}
+.sss{
+	    display: block;
+	        line-height: 50px;
+    
+    color: #919191;
+}
+#sub{
+	    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #999;
+    color: #fff;
+    float: left;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+    border: 0;
+}
+#sub:hover{
+	background-color: pink;
+}
+.alr{
+	width: 100%;
+	overflow: hidden;
+}
+.ale{
+	float: left;
+    width: 150px;
+    height: 50px;
+}
+.ale a{
+	float: left;
+	width: 24px;
+	height: 24px;
+	margin-top: 13px;
+	margin-right: 10px;
+	  background:url(../images/loginin-icon.png) -56px 0 no-repeat ;
+}
+.ale  .qwe{
+	background:url(../images/loginin-icon.png) -56px -24px no-repeat ;
+}
+.ale a:last-child{
+	  background:url(../images/loginin-icon.png) -56px -48px no-repeat ;
+}
+.alr{
+	float: right;
+}
+
+.alr p,a{
+	display: inline-block;
+	color: #919191;
+	line-height: 50px;
+}
+.alr a{
+	color: red;
+}

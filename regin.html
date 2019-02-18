@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="description" content="SEPHORA丝芙兰化妆品购物网站-法国路威酩轩（LVMH）旗下品牌，为您提供国际知名化妆品、护肤品、彩妆、香水等美容用品，购买正品化妆品，就上丝芙兰化妆品网站，官方授权、无障碍退货！">
+	<meta name="keywords" content="化妆品,化妆品购物网站,SEPHORA丝芙兰官网">
+	<title>SEPHORA丝芙兰官网－国际化妆品购物网站！</title>
+	<link rel="shortcut icon" type="image/x-icon" href="file:///C:/Users/Administrator/Desktop/苏宁/丝芙兰/images/favicon.ico" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/commn.css" />
+	<link rel="stylesheet" type="text/css" href="css/regin.css" />
+	</head>
+	<body>
+		<div id="headerO_wrapper">
+			<div class="headerO content">
+				<div class="aaa">
+					<a href="#"></a>
+				</div>
+				<span>欢迎注册</span>
+				<div class="he2">
+					<p>已有账号？</p>
+					<a href="login.html">立即登录</a>
+				</div>
+			</div>
+		</div>
+		<div id="Main_Wrapper">
+			<div class="main content">
+				<div class="left">
+					<div class="top">
+						<h3>图形验证码</h3>
+						<input type="text" name="" id="tex1" value="" />
+						<input type="text" name="" id="tex2" value="" />
+					</div>
+					<div class="biao">
+						<h3>手机号</h3><input type="text" name="name" id="username" placeholder="请输入手机号" />
+						<h3>输入密码</h3><input type="password" name="password" id="password" placeholder="请输入密码" />
+						<h3>确认密码</h3><input type="password" name="password2" id="pwd1" placeholder="请再次输入密码" />
+						<input id='sub' type="button" value="同意条款并注册" />
+						<div id="a01">
+						</div>
+						<div id="a02">
+						</div>
+						<div id="a03">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="Foot_Wrapper">
+			<div class="foot_bot content">
+				<a href="#">沪公网安备 31010602003121号</a>
+				<a href="#">ICP备案序号:沪ICP备05026645号</a>
+				<a href="#">网站使用条款</a>
+				<a href="#">严正声明</a>
+				<p>本网站隶属于丝芙兰（上海）化妆品销售有限公司（企业法人营业执照)</p>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="ajax.js">
+</script>
+<script>
+	var oBtn = document.getElementById("sub"),
+		oUser = document.getElementById("username"),
+		oPwd = document.getElementById("password");
+	oPwd1 = document.getElementById("pwd1");
+	var box = document.getElementById("a01");
+	var box2 = document.getElementById("a02");
+	var box3 = document.getElementById("a03");
+	oUser.onblur = function() {
+		if(oUser.value.length != 0) {
+			if(!isNaN(oUser.value)) {
+				if(oUser.value.length != 10) {
+					alert("手机号码必须得为10位数字")
+					oUser.focus()
+					box.style.display = 'none'
+				} else {
+					box.style.display = 'block'
+				}
+			} else {
+				alert("手机号输入不符合规范")
+				oUser.focus()
+				box.style.display = 'none'
+			}
+		} else {
+			alert("用户手机号码不能为空")
+			oUser.focus()
+			box.style.display = 'none'
+		}
+	}
+	oPwd.onblur = function() {
+		if(oPwd.value.length != 0) {
+			if(oPwd.value.length < 6) {
+				alert("密码长度不能小于6位")
+				oPwd.focus()
+				box2.style.display = 'none'
+			} else {
+				box2.style.display = 'block'
+			}
+		} else {
+			alert("密码不能为空");
+			oPwd.focus()
+			box2.style.display = 'none'
+		}
+	}
+	oPwd1.onblur = function() {
+		if(oPwd.value !== oPwd1.value) {
+			alert("输入密码错误,请再次输入密码");
+			oPwd1.focus()
+			box3.style.display = 'none'
+		} else {
+			box3.style.display = 'block'
+		}
+	}
+	oBtn.onclick = function(e) {
+		var e = e || event;
+		e.preventDefault();
+		var oUserval = oUser.value;
+		var oPwdval = oPwd.value;
+		ajax("post", "http://localhost/sifulan1/register.php", {
+			uname: oUserval,
+			upwd: oPwdval
+		}, function(data) {
+			var data = JSON.parse(data);
+			console.log(data.status)
+			if(data.status == 1) {
+				alert("注册成功");
+				location.href = "login.html";
+			} else {
+				alert("注册失败");
+			}
+		})
+	}
+</script>

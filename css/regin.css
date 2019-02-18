@@ -1,0 +1,193 @@
+
+
+/*头部*/
+#headerO_wrapper{
+	width: 1349px;
+	height: 89px;
+	background: #FFFFFF;
+}
+.headerO{
+	height: 89px;
+	background: #FFFFFF;
+}
+.headerO .aaa{   
+	 width: 250px;
+    height: 33px;
+    margin: 28px 0 0;
+    float: left;
+    cursor: pointer;
+    background: url(../images/search_logo.png) no-repeat;
+}
+.headerO span{
+	  float: left;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #333;
+    margin: 45px 0 0 30px;
+}
+.he2{
+	    float: right;
+    margin-top: 30px;
+}
+.he2 p{
+	    float: left;
+    color: #9d9d9d;
+}    
+.he2 a{
+	text-decoration:initial;
+	color: #000000;
+	cursor: pointer;
+    float: left;
+}
+.he2 a:hover{
+	color: pink;
+}
+/*主题*/
+#Main_Wrapper{
+	width: 100%;
+	height: 804px;
+	background: url(../images/loginssearchpassword_bg.jpg) no-repeat scroll 50% 0;
+}
+.main{
+	height: 100%;
+}
+.left{
+	width: 670px;
+	height: 310px;
+	padding: 60px 0 0 80px;
+}
+.left .top{
+	height: 32px;
+	 margin-bottom: 35px;
+	 display: none;
+}
+ h3{
+	font-size: 14px;
+    float: left;
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+#tex1{
+	 float: left;
+	 border: 1px solid #ccc;
+    text-indent: 20px;
+    width: 298px;
+    height: 30px;
+    outline: none;
+}
+#tex2{
+	background: paleturquoise;
+	 width: 120px;
+    height: 32px;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    margin-right: 10px;
+}
+.biao{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#username{
+	 float: left;
+	 border: 1px solid #ccc;
+    text-indent: 20px;
+    width: 298px;
+    height: 30px;
+    outline: none;
+    margin-right: 155px;
+    margin-bottom: 30px;
+}
+#password{
+	 float: left;
+	 border: 1px solid #ccc;
+    text-indent: 20px;
+    width: 298px;
+    height: 30px;
+    outline: none;
+    margin-right: 155px;
+    margin-bottom: 30px;
+}
+#pwd1{
+	 float: left;
+	 border: 1px solid #ccc;
+    text-indent: 20px;
+    width: 298px;
+    height: 30px;
+    outline: none;
+    margin-right: 155px;
+    margin-bottom: 30px;
+}
+#sub{
+	    margin-left: 110px;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #999;
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+    outline: none;
+    border: 0;
+}
+/*/*底部导航*/*/
+#Foot_Wrapper{
+	widows: 1349px;
+	height: 102px;
+	
+	background: #000000;
+	text-align: center;
+}
+.foot_bot{
+	height: 72px;
+	padding-top: 30px;
+	background: #000000;
+	text-align: center;
+}
+.foot_bot a{
+	font-size: 14px;
+	 color: #6f6f6f;
+    margin: 0 22px;
+    line-height: 21px;
+}
+.foot_bot a:first-child{
+	padding-left: 30px;
+	background: url(../images/footer-redords-icon.png)  no-repeat;
+}
+#a01{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	left: 430px;
+	background: url(../images/confirmproduct-icon.png) no-repeat;
+	display: none;
+}
+#a02{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 63px;
+	left: 430px;
+	background: url(../images/confirmproduct-icon.png) no-repeat;
+	display: none;
+}
+#a03{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 125px;
+	left: 430px;
+	background: url(../images/confirmproduct-icon.png) no-repeat;
+	display: none;
+}

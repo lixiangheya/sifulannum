@@ -1,0 +1,58 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+
+body,html{
+	font:12px "微软雅黑",Arial;	
+	color:#737373;
+}
+li{
+	list-style:none;	
+}
+a{
+	text-decoration:none;
+	font-weight: 400;
+	font-size:12px;	
+}
+a:hover{
+	color:#ff0000;
+}
+i,em{
+	font-style: normal;
+}
+h1,h2,h3,h4,h6,b,strong{
+	font-weight:normal;
+	font-size:12px;	
+}
+img{border:0;}
+input{
+	outline:none;	
+}
+.clearfix:after{
+	content:' ';
+	display:block;
+	height:0;
+	overflow:hidden;
+	clear:both;	
+}
+.content{
+	width:1190px;
+	margin:0 auto;
+}
+input{
+	    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+	    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="description" content="SEPHORA丝芙兰化妆品购物网站-法国路威酩轩（LVMH）旗下品牌，为您提供国际知名化妆品、护肤品、彩妆、香水等美容用品，购买正品化妆品，就上丝芙兰化妆品网站，官方授权、无障碍退货！">
+        <meta name="keywords" content="化妆品,化妆品购物网站,SEPHORA丝芙兰官网">
+        <title>SEPHORA丝芙兰官网－国际化妆品购物网站！</title>
+       <link rel="shortcut icon" type="image/x-icon" href="file:///C:/Users/Administrator/Desktop/苏宁/丝芙兰/images/favicon.ico" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/commn.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<div id="headerO_wrapper">
+			<div class="headerO content">
+				<div class="aaa">
+					<a href="#"></a>
+				</div>
+		
+		</div>
+		<div id="Main_Wrapper">
+			<div class="list">
+				<h4>登陆丝芙兰官网</h4>
+				<div class="aac">
+					
+				</div>
+				<div class="aab">
+					
+				</div>
+				<form action="" method="post">
+					<input type="text" id="username" name="name" placeholder="手机号/邮箱" />
+					<input type="password" id="password" name="password" placeholder="密码" />
+					<a href="#" class="sss">忘记密码?</a>
+					<input type="submit" value="登录" id="sub" />
+				</form>
+				<div class="alr">
+					<div class="ale">
+					<a href="#"></a>
+					<a href="#" class="qwe"></a>
+					<a href="#"></a>
+					</div>
+				<div class="ari">
+					<p  >还没有账号？</p><a href="regin.html"  >免费注册</a>
+				</div>
+				</div>
+				
+			</div>
+		</div>
+		<div id="Foot_Wrapper">
+			<div class="foot_bot content">
+				<a href="#">沪公网安备 31010602003121号</a><a href="#">ICP备案序号:沪ICP备05026645号</a>
+				<a href="#">网站使用条款</a> <a href="#">严正声明</a>
+				<p>本网站隶属于丝芙兰（上海）化妆品销售有限公司（企业法人营业执照)</p>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="ajax.js" >
+	
+</script>
+<script type="text/javascript" src="js/jquery.min.js">
+	
+</script>
+<script type="text/javascript">
+$(function() {
+		$("input[name=name]").blur(function() {
+			if ($(this).val().length!=0) {
+				if (!isNaN($(this).val())) {
+					if($(this).val().length != 10) {
+					$(document).ready(function(){ alert("手机号码必须得为11位数字");}); //不通过为0
+					$(this).data({"num":0})//不通过为0
+					} else {
+					
+						$(this).data({
+						"num": 1
+					}) //通过为1
+						}
+				} else{
+					$(document).ready(function(){ alert("手机号输入不符合规范");});
+				}
+				
+			} else{
+				$(document).ready(function(){ alert("手机号不能为空");});
+			}
+			
+		})
+
+		$("input[name=password]").blur(function() {
+			if ($(this).val().length!=0) {
+			if($(this).val().length < 6) {
+				$(document).ready(function(){ alert("密码长度不能小于6位");});
+					$(this).data({
+						"num": 1
+				})
+			} else {
+				
+				$(this).data({
+					"num": 1
+				})
+			}
+				
+			} else{
+				$(document).ready(function(){ alert("密码不能为空");});
+			}
+		}
+		)
+
+		$("input[name=password2]").blur(function() {
+			if($(this).val() !== $("input[name=password]").val()) {
+				$(document).ready(function(){ alert("输入密码错误,请再次输入密码");});
+				$(this).data({
+					"num": 0
+				})
+			} else {
+				$(this).data({
+					"num": 1
+				})
+			}
+		})
+	})
+var oBtn = document.getElementById("sub"),
+	oUser = document.getElementById("username"),
+	oPwd = document.getElementById("password");
+oBtn.onclick = function(e){
+	var e = e||event;
+	e.preventDefault();
+	var oUserval = oUser.value;
+	var oPwdval = oPwd.value;
+
+	ajax("post","http://localhost/sifulan1/login.php",{uname:oUserval,upwd:oPwdval},function(data){
+		var data = JSON.parse(data);
+		var n = data.status;
+		switch (n) {
+			case 1:
+				alert("登录成功");
+				location.href="index1.html";
+				break;
+			case 2:
+				alert("密码错误");
+				break;
+			case 0:
+				alert("用户名不存在");
+				break;
+		}
+	})
+}
+</script>
